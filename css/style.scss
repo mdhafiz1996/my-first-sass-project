@@ -1,0 +1,261 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+body{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	color: #2dd3950;
+	font-family: 'Roboto', sans-serif;
+	
+
+
+}
+%gradient{
+				/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4096e2+50,4096ee+50 */
+background: rgb(64,150,226); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(64,150,226,1) 50%, rgba(64,150,238,1) 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(64,150,226,1) 50%,rgba(64,150,238,1) 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(64,150,226,1) 50%,rgba(64,150,238,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096e2', endColorstr='#4096ee',GradientType=1 ); /* IE6-9 */
+
+}
+%transition{
+	 transition: all 0.3s ease;
+	 -webkit-transition: all 0.3s ease;
+	 -moz-transition: all 0.3s ease;
+}
+.navbar{
+	background-color:#F6F9F9;
+	.navbar-nav{
+		.nav-item{
+			.nav-link{
+				color: #2dd3950;
+				font-size: 18px;
+				font-weight: 700;
+				@extend %transition;
+				text-transform: uppercase; 
+
+				&:hover{
+				color:#2EAFEA;
+			    }
+			}
+		}
+	}
+}
+
+
+
+img{
+	max-width: 100%;
+}
+
+
+
+.banner-section{
+	background-image: url(../images/Strict.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	background-attachment: fixed;
+	i{
+		color: white;
+		font-size: 22px;
+		background-color:none;
+	}
+	.row{
+		height:90vh;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		h1{
+			color: white;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 100px;
+
+	}
+	span{
+		
+		height: 4px;
+		background-color:#2EAFEA;
+		display: block;
+		margin: auto;
+		margin:25px 0px;
+	}
+	p{
+		color: white;
+		font-size: 22px;
+		margin-bottom: 30px;
+		font-weight: 400;
+	}
+	}
+
+}
+.btn-custom{
+	border:1px solid #2EAFEA;
+	color: white;
+	padding: 10px 30px;
+
+	&:hover{
+		background: #2EAFEA;
+		color: white;
+	}
+}
+
+.click{
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+}
+
+.about-section{
+	background-color:#F6F9F9;
+	padding: 50px 0px;
+	text-align: center;
+	h2{
+		font-size: 40px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	p{
+		font-size: 16px;
+		padding: 0px 227px;
+		font-weight: 400;
+
+	}
+}
+
+.service-section{
+	padding: 50px 0px;
+	text-align: center;
+
+	.service{
+		.icon{
+			@extend %gradient;
+			    width: 100px;
+			    height: 100px;
+			    color: white;
+			    font-size: 60px;
+			    text-align: center;
+			    line-height: 100px;
+			    margin: auto;
+				i{
+					text-shadow: 1px 1px 2px #2d3950;
+				}
+		}
+		h3{
+			font-size: 30px;
+		    margin: 20px 0px;
+		    margin: 0px;
+		    padding: 20px 0px;
+		    font-weight: 700;
+				}
+		p{
+			font-color:red;
+			margin: 0px;
+			font-weight: 400;
+		}
+	}
+}
+
+
+.feature-section{
+		padding: 100px 0px;
+		background-color: #f8f9fa!important;
+	.heading{
+		h2{
+			font-size: 40px;
+			font-weight: 700;
+			text-align: center;
+		}
+		p{
+			font-size: 22px;
+			margin-bottom: 70px;
+			font-weight: 400;
+			text-align: center;
+		}
+		.feature{
+				
+			img{
+				max-width: 100%;
+
+				
+			}
+		}
+	}
+}
+
+.form-section{
+	padding: 100px 0px;
+	background-color:#2d3950;
+	color: white;
+
+	h2{
+	font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+}
+	}
+	p{
+		font-size: 16px;
+    	margin-bottom: 57px;
+    	font-weight: 400;
+    	text-align: center;
+	}
+	
+	.form-control{
+		background:transparent !important;
+	}
+
+
+
+
+.top-footer{
+	background-color:#655a5a0f;
+	padding: 20px 0px;
+	h5{
+		font-size: 22px;
+		margin: 0px;
+		font-weight: 400;
+	}
+	ul{
+		list-style: none;
+		margin: 0px;
+		text-align: right;
+		li{
+			display: inline-block;
+			a{
+				
+				background-color: #009fff;
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+				color: white;
+				display: block;
+				text-align: center;
+				margin-left:15px;
+				border:1px solid #009fff; 
+				border-radius: 3px;
+				font-size: 18px;
+				&:hover{
+				background-color:transparent;
+				color: white;
+				border:1px solid #009fff; 
+				}
+			}
+		}
+	}
+}
+.btn-cus{
+	border:1px solid #009fff; 
+	padding: 8px 40px;
+	color: white;
+}
+.btn-cus:hover{
+	background-color: #009fff; 
+	
+	color: white;
+}
